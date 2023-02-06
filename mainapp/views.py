@@ -1,8 +1,6 @@
-
 from datetime import datetime
 
 from django.views.generic import TemplateView
-
 
 
 class MainPageView(TemplateView):
@@ -11,7 +9,6 @@ class MainPageView(TemplateView):
 
 class NewsPageView(TemplateView):
     template_name = "mainapp/news.html"
-
 
     def get_context_data(self, **kwargs):
         # Get all previous data
