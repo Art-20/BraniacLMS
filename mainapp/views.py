@@ -41,7 +41,10 @@ class DocSitePageView(TemplateView):
 
 
 class LoginPageView(TemplateView):
-    template_name = "mainapp/login.html"from django.shortcuts import get_object_or_404
+    template_name = "mainapp/login.html"
+
+
+from django.shortcuts import get_object_or_404
 from django.views.generic import TemplateView
 
 from mainapp import models as mainapp_models
